@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhD Research &mdash; Soumendu Majee</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-brand">Soumendu Majee</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="phd-research.html" class="active">PhD Research</a></li>
+      <li><a href="open-source.html">Open-source Software</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-content">
+
+  <h1 class="section-title" style="font-size:1.8rem; margin-bottom: 8px;">PhD Research</h1>
+
+  <p class="research-intro">
+    My doctoral work at Purdue University emphasizes <strong>computational imaging methods to improve the quality and speed of tomographic imaging</strong>. This research involved collaborations with Eli Lilly, Canadian Light Source, Argonne National Laboratory, General Electric, Northrop Grumman, and the Air Force Research Laboratory, resulting in publications and open-source software.
+  </p>
+
+  <div class="research-cards">
+
+    <!-- 1. Multi-Slice Fusion -->
+    <div class="research-card">
+      <div class="research-card-header">
+        <h3>Multi-Slice Fusion</h3>
+        <p class="research-card-collab">Purdue University &amp; Eli Lilly</p>
+      </div>
+      <div class="research-card-body">
+        <p>
+          This research addresses <em>inverse problems spanning four or more dimensions</em> such as space, time, and other independent parameters. The framework combines convolutional neural networks across different planes to create high-dimensional prior models for iterative reconstruction. Testing with limited-angle views (90&deg;) demonstrated superior results without major artifacts compared to FBP and MBIR+4D-MRF approaches, making it particularly useful for dynamic tomographic imaging scenarios.
+        </p>
+        <div class="paper-links">
+          <a href="https://arxiv.org/pdf/2008.01567" target="_blank" class="paper-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Journal Paper (IEEE Trans. Computational Imaging)
+          </a>
+          <a href="https://arxiv.org/pdf/1906.06601" target="_blank" class="paper-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Conference Paper (ICCP 2019, Tokyo)
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. CodEx -->
+    <div class="research-card">
+      <div class="research-card-header">
+        <h3>CodEx: Coded Exposure CT Reconstruction</h3>
+        <p class="research-card-collab">Purdue University &amp; Argonne National Laboratory</p>
+      </div>
+      <div class="research-card-body">
+        <p>
+          CodEx focuses on <em>coded exposure methods for CT reconstruction improvement</em>. By designing the exposure pattern in a coded fashion, this technique enables improved image quality and noise characteristics in computed tomography reconstruction. The work was carried out in collaboration with the Advanced Photon Source at Argonne National Laboratory, enabling practical evaluation at a world-class synchrotron X-ray facility.
+        </p>
+        <div class="paper-links">
+          <a href="https://arxiv.org/pdf/2111.06069" target="_blank" class="paper-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Journal Paper (IEEE Trans. Computational Imaging)
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Multi-Pose-Fusion -->
+    <div class="research-card">
+      <div class="research-card-header">
+        <h3>Multi-Pose-Fusion</h3>
+        <p class="research-card-collab">Purdue University &amp; Eli Lilly</p>
+      </div>
+      <div class="research-card-body">
+        <p>
+          This work addresses metal artifacts in X-ray CT by <em>fusing information from complementary measurement poses into a single reconstruction</em>. Metal objects create severe artifacts in standard CT because they strongly attenuate X-rays, obscuring surrounding tissue or material. The pixel-weighted multi-pose fusion approach accommodates dense materials that would otherwise block views, significantly reducing beam-hardening and streaking artifacts in pharmaceutical and industrial CT applications.
+        </p>
+        <div class="paper-links">
+          <a href="https://arxiv.org/pdf/2406.17897" target="_blank" class="paper-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Conference Paper (arXiv)
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Separable Models -->
+    <div class="research-card">
+      <div class="research-card-header">
+        <h3>Separable Models for Cone-Beam MBIR Reconstruction</h3>
+        <p class="research-card-collab">Purdue University, GE Aviation, Northrop Grumman &amp; Air Force Research Laboratory</p>
+      </div>
+      <div class="research-card-body">
+        <p>
+          The separable cone-beam projection operator enables <em>faster computation of tomographic reconstruction due to more efficient computation and improved parallelism and cache efficiency</em>. This efficient projector facilitates model-based iterative reconstruction with advanced prior models, making high-quality 3D reconstruction practical for large-scale industrial non-destructive testing applications such as turbine blade inspection and composite material analysis.
+        </p>
+        <div class="paper-links">
+          <a href="https://engineering.purdue.edu/~bouman/publications/orig-pdf/ei2018-Thilo.pdf" target="_blank" class="paper-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Conference Paper (Electronic Imaging 2018)
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Neuron Detection -->
+    <div class="research-card">
+      <div class="research-card-header">
+        <h3>Model-Based Neuron Detection Using Sparse Location Priors</h3>
+        <p class="research-card-collab">Purdue University</p>
+      </div>
+      <div class="research-card-body">
+        <p>
+          This work applies model-based approaches incorporating <em>sparse location priors for neuronal identification</em> in volumetric imaging datasets. Accurate automated neuron detection is essential for connectomics and neuroscience research, where manual annotation of large 3D microscopy volumes is prohibitively time-consuming. The model-based framework leverages the known sparsity of neuron locations to improve detection accuracy over purely data-driven approaches.
+        </p>
+        <div class="paper-links">
+          <a href="https://library.imaging.org/admin/apis/public/api/ist/website/downloadArticle/ei/29/17/art00003" target="_blank" class="paper-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Conference Paper (Electronic Imaging 2017)
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Soumendu Majee &mdash; <a href="mailto:soumendu.majee.1@gmail.com">soumendu.majee.1@gmail.com</a></p>
+</footer>
+
+</body>
+</html>

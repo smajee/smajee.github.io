@@ -317,7 +317,7 @@ section {
   overflow: hidden;
   box-shadow: var(--shadow);
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .software-card-inner {
@@ -345,17 +345,19 @@ section {
 }
 
 .software-card-image {
-  width: 100%;
-  border-top: 1px solid var(--border);
-  overflow: hidden;
+  border-left: 1px solid var(--border);
   background: var(--bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .software-card-image img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: block;
-  max-height: 260px;
-  object-fit: cover;
 }
 
 .sw-links {
@@ -430,5 +432,14 @@ footer a {
   .news-item {
     grid-template-columns: 50px 1fr;
     gap: 10px;
+  }
+
+  .software-card {
+    grid-template-columns: 1fr;
+  }
+
+  .software-card-image {
+    border-left: none;
+    border-top: 1px solid var(--border);
   }
 }

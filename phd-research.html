@@ -35,19 +35,24 @@
         <h3>Multi-Slice Fusion</h3>
         <p class="research-card-collab">Purdue University &amp; Eli Lilly</p>
       </div>
-      <div class="research-card-body">
-        <p>
-          This research addresses <em>inverse problems spanning four or more dimensions</em> such as space, time, and other independent parameters. The framework combines convolutional neural networks across different planes to create high-dimensional prior models for iterative reconstruction. Testing with limited-angle views (90&deg;) demonstrated superior results without major artifacts compared to FBP and MBIR+4D-MRF approaches, making it particularly useful for dynamic tomographic imaging scenarios.
-        </p>
-        <div class="paper-links">
-          <a href="https://arxiv.org/pdf/2008.01567" target="_blank" class="paper-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Journal Paper (IEEE Trans. Computational Imaging)
-          </a>
-          <a href="https://arxiv.org/pdf/1906.06601" target="_blank" class="paper-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Conference Paper (ICCP 2019, Tokyo)
-          </a>
+      <div class="research-card-content">
+        <div class="research-card-body">
+          <p>
+            This research addresses <em>inverse problems spanning four or more dimensions</em> such as space, time, and other independent parameters. The framework combines convolutional neural networks across different planes to create high-dimensional prior models for iterative reconstruction. Testing with limited-angle views (90&deg;) demonstrated superior results without major artifacts compared to FBP and MBIR+4D-MRF approaches, making it particularly useful for dynamic tomographic imaging scenarios.
+          </p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2008.01567" target="_blank" class="paper-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Journal Paper (IEEE Trans. Computational Imaging)
+            </a>
+            <a href="https://arxiv.org/pdf/1906.06601" target="_blank" class="paper-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Conference Paper (ICCP 2019, Tokyo)
+            </a>
+          </div>
+        </div>
+        <div class="research-card-image">
+          <img src="figs/phd/multislice_fusion.png" alt="Multi-Slice Fusion architecture: three CNN denoisers fused via MACE">
         </div>
       </div>
     </div>
@@ -58,15 +63,20 @@
         <h3>CodEx: Coded Exposure CT Reconstruction</h3>
         <p class="research-card-collab">Purdue University &amp; Argonne National Laboratory</p>
       </div>
-      <div class="research-card-body">
-        <p>
-          CodEx focuses on <em>coded exposure methods for CT reconstruction improvement</em>. By designing the exposure pattern in a coded fashion, this technique enables improved image quality and noise characteristics in computed tomography reconstruction. The work was carried out in collaboration with the Advanced Photon Source at Argonne National Laboratory, enabling practical evaluation at a world-class synchrotron X-ray facility.
-        </p>
-        <div class="paper-links">
-          <a href="https://arxiv.org/pdf/2111.06069" target="_blank" class="paper-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Journal Paper (IEEE Trans. Computational Imaging)
-          </a>
+      <div class="research-card-content">
+        <div class="research-card-body">
+          <p>
+            CodEx focuses on <em>coded exposure methods for CT reconstruction improvement</em>. By designing the exposure pattern in a coded fashion, this technique enables improved image quality and noise characteristics in computed tomography reconstruction. The work was carried out in collaboration with the Advanced Photon Source at Argonne National Laboratory, enabling practical evaluation at a world-class synchrotron X-ray facility.
+          </p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2111.06069" target="_blank" class="paper-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Journal Paper (IEEE Trans. Computational Imaging)
+            </a>
+          </div>
+        </div>
+        <div class="research-card-image">
+          <img src="figs/phd/codex.png" alt="CodEx: coded exposure acquisition and reconstruction pipeline">
         </div>
       </div>
     </div>
@@ -77,15 +87,20 @@
         <h3>Multi-Pose-Fusion</h3>
         <p class="research-card-collab">Purdue University &amp; Eli Lilly</p>
       </div>
-      <div class="research-card-body">
-        <p>
-          This work addresses metal artifacts in X-ray CT by <em>fusing information from complementary measurement poses into a single reconstruction</em>. Metal objects create severe artifacts in standard CT because they strongly attenuate X-rays, obscuring surrounding tissue or material. The pixel-weighted multi-pose fusion approach accommodates dense materials that would otherwise block views, significantly reducing beam-hardening and streaking artifacts in pharmaceutical and industrial CT applications.
-        </p>
-        <div class="paper-links">
-          <a href="https://arxiv.org/pdf/2406.17897" target="_blank" class="paper-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Conference Paper (arXiv)
-          </a>
+      <div class="research-card-content">
+        <div class="research-card-body">
+          <p>
+            This work addresses metal artifacts in X-ray CT by <em>fusing information from complementary measurement poses into a single reconstruction</em>. Metal objects create severe artifacts in standard CT because they strongly attenuate X-rays, obscuring surrounding tissue or material. The pixel-weighted multi-pose fusion approach accommodates dense materials that would otherwise block views, significantly reducing beam-hardening and streaking artifacts in pharmaceutical and industrial CT applications.
+          </p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2406.17897" target="_blank" class="paper-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Conference Paper (arXiv)
+            </a>
+          </div>
+        </div>
+        <div class="research-card-image">
+          <img src="figs/phd/multipose_fusion.png" alt="Multi-Pose Fusion: comparison of single-pose, post-processing, and MPF reconstructions">
         </div>
       </div>
     </div>
@@ -96,15 +111,20 @@
         <h3>Separable Models for Cone-Beam MBIR Reconstruction</h3>
         <p class="research-card-collab">Purdue University, GE Aviation, Northrop Grumman &amp; Air Force Research Laboratory</p>
       </div>
-      <div class="research-card-body">
-        <p>
-          The separable cone-beam projection operator enables <em>faster computation of tomographic reconstruction due to more efficient computation and improved parallelism and cache efficiency</em>. This efficient projector facilitates model-based iterative reconstruction with advanced prior models, making high-quality 3D reconstruction practical for large-scale industrial non-destructive testing applications such as turbine blade inspection and composite material analysis.
-        </p>
-        <div class="paper-links">
-          <a href="https://engineering.purdue.edu/~bouman/publications/orig-pdf/ei2018-Thilo.pdf" target="_blank" class="paper-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Conference Paper (Electronic Imaging 2018)
-          </a>
+      <div class="research-card-content">
+        <div class="research-card-body">
+          <p>
+            The separable cone-beam projection operator enables <em>faster computation of tomographic reconstruction due to more efficient computation and improved parallelism and cache efficiency</em>. This efficient projector facilitates model-based iterative reconstruction with advanced prior models, making high-quality 3D reconstruction practical for large-scale industrial non-destructive testing applications such as turbine blade inspection and composite material analysis.
+          </p>
+          <div class="paper-links">
+            <a href="https://engineering.purdue.edu/~bouman/publications/orig-pdf/ei2018-Thilo.pdf" target="_blank" class="paper-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Conference Paper (Electronic Imaging 2018)
+            </a>
+          </div>
+        </div>
+        <div class="research-card-image">
+          <img src="figs/phd/separable_models.png" alt="Separable cone-beam MBIR: reconstruction quality comparison">
         </div>
       </div>
     </div>
@@ -115,15 +135,17 @@
         <h3>Model-Based Neuron Detection Using Sparse Location Priors</h3>
         <p class="research-card-collab">Purdue University</p>
       </div>
-      <div class="research-card-body">
-        <p>
-          This work applies model-based approaches incorporating <em>sparse location priors for neuronal identification</em> in volumetric imaging datasets. Accurate automated neuron detection is essential for connectomics and neuroscience research, where manual annotation of large 3D microscopy volumes is prohibitively time-consuming. The model-based framework leverages the known sparsity of neuron locations to improve detection accuracy over purely data-driven approaches.
-        </p>
-        <div class="paper-links">
-          <a href="https://library.imaging.org/admin/apis/public/api/ist/website/downloadArticle/ei/29/17/art00003" target="_blank" class="paper-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Conference Paper (Electronic Imaging 2017)
-          </a>
+      <div class="research-card-content">
+        <div class="research-card-body">
+          <p>
+            This work applies model-based approaches incorporating <em>sparse location priors for neuronal identification</em> in volumetric imaging datasets. Accurate automated neuron detection is essential for connectomics and neuroscience research, where manual annotation of large 3D microscopy volumes is prohibitively time-consuming. The model-based framework leverages the known sparsity of neuron locations to improve detection accuracy over purely data-driven approaches.
+          </p>
+          <div class="paper-links">
+            <a href="https://library.imaging.org/admin/apis/public/api/ist/website/downloadArticle/ei/29/17/art00003" target="_blank" class="paper-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Conference Paper (Electronic Imaging 2017)
+            </a>
+          </div>
         </div>
       </div>
     </div>

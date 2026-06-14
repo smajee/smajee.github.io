@@ -207,7 +207,7 @@ nav {
 .affil-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin-top: 16px;
 }
 
@@ -215,9 +215,30 @@ nav {
   background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: 20px;
-  padding: 5px 14px;
-  font-size: 0.85rem;
+  padding: 4px 13px;
+  font-size: 0.83rem;
   color: var(--text);
+}
+
+.affil-tag--current {
+  background: #f0f7ff;
+  border-color: #0a66c2;
+  color: #0a66c2;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.affil-now {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #0a66c2;
+  border-radius: 3px;
+  padding: 1px 5px;
 }
 
 /* ===== SECTION HEADERS ===== */

@@ -485,94 +485,6 @@ section {
   text-decoration: none;
 }
 
-/* ===== SOFTWARE CARDS ===== */
-.software-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-
-.software-card {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.software-card-inner {
-  padding: 24px;
-}
-
-.software-card h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--primary);
-  margin-bottom: 4px;
-}
-
-.software-card-subtitle {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  margin-bottom: 14px;
-}
-
-.software-card p {
-  color: var(--text);
-  line-height: 1.75;
-  margin-bottom: 16px;
-  font-size: 0.95rem;
-}
-
-.software-card-image {
-  border-left: 1px solid var(--border);
-  background: var(--bg-alt);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.software-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-.sw-links {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.sw-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: opacity 0.15s;
-}
-
-.sw-link:hover {
-  opacity: 0.85;
-  text-decoration: none;
-}
-
-.sw-link-github {
-  background: #24292e;
-  color: #fff;
-}
-
-.sw-link-docs {
-  background: var(--accent);
-  color: #fff;
-}
-
 /* ===== FOOTER ===== */
 footer {
   background: var(--primary);
@@ -613,15 +525,6 @@ footer a {
   .news-item {
     grid-template-columns: 50px 1fr;
     gap: 10px;
-  }
-
-  .software-card {
-    grid-template-columns: 1fr;
-  }
-
-  .software-card-image {
-    border-left: none;
-    border-top: 1px solid var(--border);
   }
 
   .research-card-content {

@@ -354,6 +354,18 @@ section {
   min-height: 2.5em;
 }
 
+.fig-labels-row {
+  display: flex;
+  min-height: unset;
+}
+
+.fig-labels-row span {
+  flex: 1;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
 .paper-links {
   display: flex;
   flex-wrap: wrap;

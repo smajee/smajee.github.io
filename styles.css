@@ -148,20 +148,53 @@ nav {
   align-items: center;
   gap: 7px;
   padding: 7px 14px;
-  border: 1px solid var(--border);
+  border: 1.5px solid;
   border-radius: 6px;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--text);
-  background: var(--bg);
-  transition: border-color 0.15s, background 0.15s;
+  transition: filter 0.15s, transform 0.12s;
+  text-decoration: none;
 }
 
 .contact-link:hover {
-  border-color: var(--accent);
-  background: var(--accent-light);
-  color: var(--accent);
+  filter: brightness(0.88);
+  transform: translateY(-1px);
   text-decoration: none;
+}
+
+/* Email — Gmail red */
+.contact-link--email {
+  color: #c0392b;
+  border-color: #e74c3c;
+  background: #fff5f5;
+}
+
+/* LinkedIn blue */
+.contact-link--linkedin {
+  color: #0a66c2;
+  border-color: #0a66c2;
+  background: #f0f7ff;
+}
+
+/* Google Scholar blue */
+.contact-link--scholar {
+  color: #1a73e8;
+  border-color: #4285f4;
+  background: #f0f4ff;
+}
+
+/* GitHub charcoal */
+.contact-link--github {
+  color: #24292f;
+  border-color: #57606a;
+  background: #f6f8fa;
+}
+
+/* CV — teal green */
+.contact-link--cv {
+  color: #0f766e;
+  border-color: #14b8a6;
+  background: #f0fdfb;
 }
 
 .contact-link img {

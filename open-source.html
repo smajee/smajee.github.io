@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open-source Software &mdash; Soumendu Majee</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-brand">Soumendu Majee</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="phd-research.html">PhD Research</a></li>
+      <li><a href="open-source.html" class="active">Open-source Software</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-content">
+
+  <h1 class="section-title" style="font-size:1.8rem; margin-bottom: 8px;">Open-source Software</h1>
+
+  <p class="research-intro">
+    Below are open-source software packages I have contributed to, spanning model-based iterative reconstruction algorithms for X-ray CT and general computational imaging frameworks.
+  </p>
+
+  <div class="software-cards">
+
+    <!-- SVMBIR -->
+    <div class="software-card">
+      <div class="software-card-inner">
+        <h3>SVMBIR</h3>
+        <p class="software-card-subtitle">Super-Voxel Model Based Iterative Reconstruction</p>
+        <p>
+          SVMBIR is a fast Python implementation of the Super-Voxel Model Based Iterative Reconstruction (SVMBIR) algorithm for 2D and 3D tomographic reconstruction. It uses a q-GGMRF prior model and a parallel-beam or fan-beam geometry, delivering high-quality reconstructions from limited or noisy projection data significantly faster than conventional FBP methods.
+        </p>
+        <div class="sw-links">
+          <a href="https://github.com/cabouman/svmbir" target="_blank" class="sw-link sw-link-github">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://svmbir.readthedocs.io/en/latest/overview.html" target="_blank" class="sw-link sw-link-docs">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Documentation
+          </a>
+        </div>
+      </div>
+      <div class="software-card-image">
+        <img
+          src="figs/open_src/svmbir.png"
+          alt="SVMBIR reconstruction example"
+        >
+      </div>
+    </div>
+
+    <!-- MBIRCONE -->
+    <div class="software-card">
+      <div class="software-card-inner">
+        <h3>MBIRCONE</h3>
+        <p class="software-card-subtitle">Model-Based Iterative Reconstruction for Cone-beam CT</p>
+        <p>
+          MBIRCONE extends model-based iterative reconstruction to cone-beam CT geometry, which is widely used in industrial non-destructive evaluation, dental imaging, and C-arm systems. It leverages the separable footprint projection model developed during my PhD research to achieve efficient 3D reconstruction with advanced prior models, enabling high-quality imaging from limited angle or noisy projection data.
+        </p>
+        <div class="sw-links">
+          <a href="https://github.com/cabouman/mbircone" target="_blank" class="sw-link sw-link-github">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://mbircone.readthedocs.io/en/latest/overview.html" target="_blank" class="sw-link sw-link-docs">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Documentation
+          </a>
+        </div>
+      </div>
+      <div class="software-card-image">
+        <img
+          src="figs/open_src/mbircone-project.png"
+          alt="MBIRCONE reconstruction example"
+        >
+      </div>
+    </div>
+
+    <!-- SCICO -->
+    <div class="software-card">
+      <div class="software-card-inner">
+        <h3>SCICO</h3>
+        <p class="software-card-subtitle">Scientific Computational Imaging COde</p>
+        <p>
+          SCICO is a Python package developed at Los Alamos National Laboratory for solving the inverse problems that arise in scientific imaging applications. It includes a growing suite of proximal algorithms, including ADMM, PDHG, and PGM, as well as a library of image reconstruction operators and regularizers. SCICO is built on JAX, enabling GPU acceleration and automatic differentiation throughout.
+        </p>
+        <div class="sw-links">
+          <a href="https://github.com/lanl/scico" target="_blank" class="sw-link sw-link-github">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://scico.readthedocs.io/en/stable/overview.html" target="_blank" class="sw-link sw-link-docs">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Documentation
+          </a>
+        </div>
+      </div>
+      <div class="software-card-image">
+        <img
+          src="figs/open_src/scico.png"
+          alt="SCICO computational imaging example"
+        >
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Soumendu Majee &mdash; <a href="mailto:soumendu.majee.1@gmail.com">soumendu.majee.1@gmail.com</a></p>
+</footer>
+
+</body>
+</html>

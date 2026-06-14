@@ -43,6 +43,9 @@
         <h3>DRIFT: Deep Restoration, ISP Fusion, and Tone-mapping</h3>
         <p class="research-card-collab">Samsung Research America &middot; CVPR Workshops 2026</p>
       </div>
+      <div class="research-card-figure">
+        <img src="figs/samsung/drift.png" alt="DRIFT pipeline overview: DRIFT-MFP deep restoration, ISP fusion, and DRIFT-TM tone-mapping stages">
+      </div>
       <div class="research-card-content research-card-content--full">
         <div class="research-card-body">
           <p>
@@ -58,32 +61,14 @@
       </div>
     </div>
 
-    <!-- 2. FastAvatar -->
-    <div class="research-card">
-      <div class="research-card-header">
-        <h3>FastAvatar: Instant 3D Gaussian Splatting for Faces from Single Unconstrained Poses</h3>
-        <p class="research-card-collab">Samsung Research America &amp; Rice University &middot; arXiv 2025</p>
-      </div>
-      <div class="research-card-content research-card-content--full">
-        <div class="research-card-body">
-          <p>
-            FastAvatar produces a <em>3D Gaussian Splatting representation of a face from a single image captured under unconstrained pose</em>, enabling near-instant 3D head avatar creation without per-subject optimization. The method bypasses the slow, optimization-heavy fitting typical of 3D avatar pipelines, making it practical for on-device and interactive applications.
-          </p>
-          <div class="paper-links">
-            <a href="https://arxiv.org/abs/2508.18389" target="_blank" class="paper-link">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-              Preprint (arXiv 2508.18389)
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 3. Splatshot -->
+    <!-- 2. Splatshot -->
     <div class="research-card">
       <div class="research-card-header">
         <h3>Splatshot: 3D Face Avatar Generation from a Single Unconstrained Photo</h3>
         <p class="research-card-collab">Samsung Research America &amp; Rice University &middot; arXiv 2025</p>
+      </div>
+      <div class="research-card-figure">
+        <img src="figs/samsung/splatshot.png" alt="Splatshot method overview: a matched base 3DGS model iteratively refined through a 3DGS-guided img2img diffusion process with per-step photometric feedback">
       </div>
       <div class="research-card-content research-card-content--full">
         <div class="research-card-body">
@@ -100,11 +85,38 @@
       </div>
     </div>
 
+    <!-- 3. FastAvatar -->
+    <div class="research-card">
+      <div class="research-card-header">
+        <h3>FastAvatar: Instant 3D Gaussian Splatting for Faces from Single Unconstrained Poses</h3>
+        <p class="research-card-collab">Samsung Research America &amp; Rice University &middot; arXiv 2025</p>
+      </div>
+      <div class="research-card-figure">
+        <img src="figs/samsung/fastavatar.png" alt="FastAvatar framework: single image to 3D Gaussian Splatting representation enabling novel view synthesis and real-time animation">
+      </div>
+      <div class="research-card-content research-card-content--full">
+        <div class="research-card-body">
+          <p>
+            FastAvatar produces a <em>3D Gaussian Splatting representation of a face from a single image captured under unconstrained pose</em>, enabling near-instant 3D head avatar creation without per-subject optimization. The method bypasses the slow, optimization-heavy fitting typical of 3D avatar pipelines, making it practical for on-device and interactive applications.
+          </p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2508.18389" target="_blank" class="paper-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Preprint (arXiv 2508.18389)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- 4. CoDISP -->
     <div class="research-card">
       <div class="research-card-header">
         <h3>CoDISP: Exploring Compressed Domain Camera ISP with RGB-guided Encoder</h3>
         <p class="research-card-collab">Samsung Research America &amp; MIT &middot; CVPR Workshops 2024</p>
+      </div>
+      <div class="research-card-figure">
+        <img src="figs/samsung/codisp.png" alt="CoDISP framework: three-step compressed-domain ISP with RGB encoder, raw encoder, and downstream ISP modules">
       </div>
       <div class="research-card-content research-card-content--full">
         <div class="research-card-body">

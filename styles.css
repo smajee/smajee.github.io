@@ -271,7 +271,7 @@ section {
 
 .research-card-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
 }
 
 .research-card-body {
@@ -280,7 +280,8 @@ section {
 
 .research-card-body p {
   color: var(--text);
-  line-height: 1.75;
+  font-size: 0.88rem;
+  line-height: 1.65;
   margin-bottom: 16px;
 }
 

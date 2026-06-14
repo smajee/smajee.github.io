@@ -293,6 +293,27 @@ section {
   color: var(--text);
 }
 
+.disclaimer {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: var(--accent-light);
+  border: 1px solid #bfdbfe;
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-bottom: 28px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.disclaimer svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--accent);
+}
+
 .research-cards {
   display: flex;
   flex-direction: column;
@@ -326,6 +347,10 @@ section {
 .research-card-content {
   display: grid;
   grid-template-columns: 2fr 3fr;
+}
+
+.research-card-content--full {
+  grid-template-columns: 1fr;
 }
 
 .research-card-body {

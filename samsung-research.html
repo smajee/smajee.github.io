@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsung Research &mdash; Soumendu Majee</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-brand">Soumendu Majee</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="samsung-research.html" class="active">Samsung Research</a></li>
+      <li><a href="phd-research.html">PhD Research</a></li>
+      <li><a href="open-source.html">Open-source Software</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-content">
+
+  <h1 class="section-title" style="font-size:1.8rem; margin-bottom: 8px;">Samsung Research America</h1>
+
+  <p class="research-intro">
+    At the MPI Lab, Samsung Research America, my work centers on <strong>AI-driven camera image signal processing (ISP) and computational photography</strong> for the Galaxy line of mobile devices. This includes multi-frame restoration, learned ISP, tone-mapping, and 3D imaging, often in collaboration with university partners such as Rice University.
+  </p>
+
+  <div class="disclaimer">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+    <span>
+      Much of my work at Samsung is proprietary and tied to shipping products. The items below cover only the <strong>publicly published portions</strong> of this work &mdash; peer-reviewed papers and preprints. Internal, unpublished, and product-confidential work is not described here.
+    </span>
+  </div>
+
+  <div class="research-cards">
+
+    <!-- 1. DRIFT -->
+    <div class="research-card">
+      <div class="research-card-header">
+        <h3>DRIFT: Deep Restoration, ISP Fusion, and Tone-mapping</h3>
+        <p class="research-card-collab">Samsung Research America &middot; CVPR Workshops 2026</p>
+      </div>
+      <div class="research-card-content research-card-content--full">
+        <div class="research-card-body">
+          <p>
+            DRIFT is an <em>efficient AI mobile camera pipeline that generates high-quality RGB images from hand-held raw captures</em>. A first-stage Multi-Frame Processing network, trained with an adversarial perceptual loss, performs multi-frame alignment, denoising, demosaicing, and super-resolution. Its output is then processed by a novel deep-learning tone-mapping stage (DRIFT-TM) that supports tone tunability, maintains tone-consistency with a reference pipeline, and runs efficiently on high-resolution images on-device.
+          </p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2604.03402" target="_blank" class="paper-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Paper (CVPR Workshops 2026)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. FastAvatar -->
+    <div class="research-card">
+      <div class="research-card-header">
+        <h3>FastAvatar: Instant 3D Gaussian Splatting for Faces from Single Unconstrained Poses</h3>
+        <p class="research-card-collab">Samsung Research America &amp; Rice University &middot; arXiv 2025</p>
+      </div>
+      <div class="research-card-content research-card-content--full">
+        <div class="research-card-body">
+          <p>
+            FastAvatar produces a <em>3D Gaussian Splatting representation of a face from a single image captured under unconstrained pose</em>, enabling near-instant 3D head avatar creation without per-subject optimization. The method bypasses the slow, optimization-heavy fitting typical of 3D avatar pipelines, making it practical for on-device and interactive applications.
+          </p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2508.18389" target="_blank" class="paper-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Preprint (arXiv 2508.18389)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Splatshot -->
+    <div class="research-card">
+      <div class="research-card-header">
+        <h3>Splatshot: 3D Face Avatar Generation from a Single Unconstrained Photo</h3>
+        <p class="research-card-collab">Samsung Research America &amp; Rice University &middot; arXiv 2025</p>
+      </div>
+      <div class="research-card-content research-card-content--full">
+        <div class="research-card-body">
+          <p>
+            Splatshot is a <em>training-free framework for reconstructing a photorealistic 3D face avatar from a single unconstrained photo</em>. It integrates 3D Gaussian Splatting with a 2D diffusion prior during denoising: at each timestep it predicts a clean image from the noisy latent, refits the 3DGS model to that prediction, and backpropagates the photometric difference between the re-rendered and predicted images to guide sampling. This per-step 3D feedback loop steers generation toward outputs that are simultaneously 3D-coherent, identity-preserving, and photorealistic &mdash; combining the geometric consistency of explicit 3D representations with the realism of 2D diffusion.
+          </p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/pdf/2606.01493" target="_blank" class="paper-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Preprint (arXiv)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. CoDISP -->
+    <div class="research-card">
+      <div class="research-card-header">
+        <h3>CoDISP: Exploring Compressed Domain Camera ISP with RGB-guided Encoder</h3>
+        <p class="research-card-collab">Samsung Research America &amp; MIT &middot; CVPR Workshops 2024</p>
+      </div>
+      <div class="research-card-content research-card-content--full">
+        <div class="research-card-body">
+          <p>
+            CoDISP introduces a camera ISP pipeline that <em>operates on a learned compressed latent domain to conserve memory</em> for high-resolution mobile sensors. An RGB-guided encoder defines a compressed latent that preserves both semantic information and high-frequency detail, and a transfer-learning strategy maps raw images into this domain. Downstream tasks &mdash; demosaicing, single- and multi-frame denoising, and registration &mdash; are all performed in the compressed domain, reducing memory demands for super-high-resolution cameras.
+          </p>
+          <div class="paper-links">
+            <a href="https://openaccess.thecvf.com/content/CVPR2024W/MAI/papers/Zhang_CoDISP_Exploring_Compressed_Domain_Camera_ISP_with_RGB-guided_Encoder_CVPRW_2024_paper.pdf" target="_blank" class="paper-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Paper (CVPR Workshops 2024)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Soumendu Majee &mdash; <a href="mailto:soumendu.majee.1@gmail.com">soumendu.majee.1@gmail.com</a></p>
+</footer>
+
+</body>
+</html>

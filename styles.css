@@ -24,6 +24,12 @@ body {
   background: var(--bg);
   line-height: 1.6;
   font-size: 16px;
+  overflow-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
@@ -500,8 +506,38 @@ footer a {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 680px) {
+  /* Nav: stack brand over wrapped, centered links */
+  .nav-inner {
+    flex-wrap: wrap;
+    padding: 0 16px;
+  }
+
+  .nav-brand {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    font-size: 1rem;
+    padding: 12px 0 8px;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .page-content {
+    padding: 24px 16px 40px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .hero-photo {
@@ -509,17 +545,12 @@ footer a {
   }
 
   .hero-photo img {
-    width: 240px;
+    width: 220px;
     margin: 0 auto;
   }
 
-  .nav-brand {
-    font-size: 0.9rem;
-  }
-
-  .nav-links a {
-    padding: 16px 12px;
-    font-size: 0.82rem;
+  .hero-name {
+    font-size: 1.7rem;
   }
 
   .news-item {
@@ -534,5 +565,30 @@ footer a {
   .research-card-image {
     border-left: none;
     border-top: 1px solid var(--border);
+  }
+
+  .research-card-image img {
+    max-height: 320px;
+  }
+
+  /* Result figure labels can get cramped; let them wrap */
+  .fig-labels-row span {
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-links a {
+    padding: 9px 9px;
+    font-size: 0.8rem;
+  }
+
+  .hero-name {
+    font-size: 1.5rem;
+  }
+
+  .contact-link,
+  .paper-link {
+    font-size: 0.8rem;
   }
 }

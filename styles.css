@@ -460,6 +460,24 @@ section {
   min-height: 2.5em;
 }
 
+.research-card-results-images + .research-card-results-images {
+  margin-top: 20px;
+}
+
+.results-row-three {
+  flex-wrap: nowrap;
+}
+
+.results-row-three .research-card-results-figure {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.fig-caption-center {
+  text-align: center;
+  min-height: unset;
+}
+
 .fig-labels-row {
   display: flex;
   min-height: unset;

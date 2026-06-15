@@ -473,6 +473,32 @@ section {
   min-width: 0;
 }
 
+.fig-crop {
+  /* Crop amount per side, as a fraction (0–1). Defined in one place. */
+  --crop-top: 0;
+  --crop-bottom: 0;
+  --crop-left: 0.15;
+  --crop-right: 0.15;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.fig-crop img {
+  display: block;
+  height: auto;
+  max-height: none;
+  max-width: none;
+  object-fit: fill;
+  width: calc(100% / (1 - var(--crop-left) - var(--crop-right)));
+  margin-left: calc(-100% * var(--crop-left) / (1 - var(--crop-left) - var(--crop-right)));
+  margin-top: calc(-100% * var(--crop-top) / (1 - var(--crop-top) - var(--crop-bottom)));
+  margin-bottom: calc(-100% * var(--crop-bottom) / (1 - var(--crop-top) - var(--crop-bottom)));
+  border: none !important;
+  border-radius: 0 !important;
+}
+
 .fig-caption-center {
   text-align: center;
   min-height: unset;

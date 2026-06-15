@@ -39,7 +39,8 @@
       <div class="research-card-content">
         <div class="research-card-body">
           <p>
-            This research addresses <em>inverse problems spanning four or more dimensions</em> such as space, time, and other independent parameters. The framework combines convolutional neural networks across different planes to create high-dimensional prior models for iterative reconstruction. Testing with limited-angle views (90&deg;) demonstrated superior results without major artifacts compared to FBP and MBIR+4D-MRF approaches, making it particularly useful for dynamic tomographic imaging scenarios.
+            This research addresses <em>inverse problems spanning four or more dimensions</em> such as space, time, and other independent parameters. The framework combines convolutional neural networks across different planes to create high-dimensional prior models for iterative reconstruction.
+            Sparse-view and limited-angle CT results demonstrate that multi-slice fusion can substantially improve the quality of reconstructions relative to traditional methods, while also being practical to implement and train.
           </p>
           <div class="paper-links">
             <a href="https://arxiv.org/pdf/2008.01567" target="_blank" class="paper-link">
@@ -57,7 +58,7 @@
         </div>
       </div>
       <div class="research-card-results">
-        <div class="research-card-results-label">Results</div>
+        <div class="research-card-results-label">Results (Limited Angle Reconstruction)</div>
         <!--
         <div class="research-card-results-images">
           <figure class="research-card-results-figure">
@@ -73,15 +74,15 @@
         -->
         <div class="research-card-results-images results-row-three">
           <figure class="research-card-results-figure">
-            <img src="figs/phd/results/multi_slice_fusion/FDK.gif" alt="FDK reconstruction">
+            <div class="fig-crop"><img src="figs/phd/results/multi_slice_fusion/FDK.gif" alt="FDK reconstruction"></div>
             <figcaption class="fig-caption-center">FBP</figcaption>
           </figure>
           <figure class="research-card-results-figure">
-            <img src="figs/phd/results/multi_slice_fusion/MRF.gif" alt="MRF reconstruction">
+            <div class="fig-crop"><img src="figs/phd/results/multi_slice_fusion/MRF.gif" alt="MRF reconstruction"></div>
             <figcaption class="fig-caption-center">MBIR + 4D-MRF</figcaption>
           </figure>
           <figure class="research-card-results-figure">
-            <img src="figs/phd/results/multi_slice_fusion/MSF.gif" alt="MSF reconstruction">
+            <div class="fig-crop"><img src="figs/phd/results/multi_slice_fusion/MSF.gif" alt="MSF reconstruction"></div>
             <figcaption class="fig-caption-center">Multi-Slice Fusion</figcaption>
           </figure>
         </div>

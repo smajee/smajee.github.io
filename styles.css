@@ -67,6 +67,12 @@ nav {
   white-space: nowrap;
 }
 
+.nav-brand:hover {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
